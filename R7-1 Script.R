@@ -16,4 +16,8 @@ lab6.reg <- lm(dys_detect ~ per_sensitive, data = lab6.data)
 #Run the Durbin-Watson test on your regression model.
 dwt(lab6.reg)
 
+# Plot residuals versus fitted values for homogeneity of variance
+plot(lab6.reg, which = 1)
+
+#Test your regression model for normality using a Q-Q plot. 
 

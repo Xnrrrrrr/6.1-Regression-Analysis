@@ -20,4 +20,5 @@ dwt(lab6.reg)
 plot(lab6.reg, which = 1)
 
 #Test your regression model for normality using a Q-Q plot. 
+plot(lab6.reg, which = 2)
 

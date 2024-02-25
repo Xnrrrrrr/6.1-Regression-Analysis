@@ -22,3 +22,9 @@ plot(lab6.reg, which = 1)
 #Test your regression model for normality using a Q-Q plot. 
 plot(lab6.reg, which = 2)
 
+# Calculates and stores the residuals
+lab6.data$residuals <- residuals(lab6.reg)
+
+# Runs the Shapiro-Wilk test on the residuals
+shapiro.test(lab6.data$residuals)
+

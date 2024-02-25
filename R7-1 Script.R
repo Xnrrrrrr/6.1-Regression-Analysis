@@ -28,3 +28,12 @@ lab6.data$residuals <- residuals(lab6.reg)
 # Runs the Shapiro-Wilk test on the residuals
 shapiro.test(lab6.data$residuals)
 
+# Compute and store standardized residuals
+lab6.data$std_residuals <- rstandard(lab6.reg)
+
+# Find the standardized residual with the highest absolute value
+max_abs_std_residual <- max(abs(lab6.data$std_residuals))
+
+# Print the result
+max_abs_std_residual
+
